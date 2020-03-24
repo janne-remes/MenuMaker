@@ -4,8 +4,8 @@ using System.Text;
 
 namespace MenuLibrary
 {
-    public class Drink: Dish
+    public class RestaurantMenuDish : RestaurantMenu
     {
-        public bool isThereAlcohol { get; set; }
+        public Dish dishID { get; set; }
     }
 }

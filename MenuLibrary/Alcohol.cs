@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MenuLibrary
 {
-    class Alcohol: Drink
+    public class Alcohol: Drink
     {
         public double alcoholPercentage { get; set; }
     }
