@@ -7,19 +7,27 @@ namespace MenuMakerConsoleUI
     {
         static void Main(string[] args)
         {
+            var dh = new DataHandler();
+            
             Console.WriteLine("MENU MAKER");
 
             Console.WriteLine("- - - - - -");
 
-            Dish ateria = new Dish();
+            dh.addDishToList();
 
-            Console.WriteLine("Syötä aterian nimi:");
+            Console.WriteLine("\nPaina mitä tahansa näppäintä jatkaaksesi");
 
-            ateria.DishName = Console.ReadLine();
+            Console.ReadKey();
 
-            Console.WriteLine($"Aterian nimi on: {ateria.DishName}");
+            Console.Clear();
 
+            dh.addDishToList();
 
+            Console.Clear();
+
+            dh.printDishesList();
+
+            Console.ReadKey();
 
 
         }

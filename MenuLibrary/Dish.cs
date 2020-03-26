@@ -10,9 +10,21 @@ namespace MenuLibrary
 
         private string dishName;
         private string dishDescription;
-        public double price { get; set; }
+        private double price;
         public DishMainCharacter DishMainCharacter { get; set; }
         public FoodLimitation foodLimitation { get; set; }
+
+        public Dish()
+        {
+
+        }
+
+        public Dish(string dishName, string dishDescription, double price)
+        {
+            this.dishName = dishName;
+            this.dishDescription = dishDescription;
+            this.price = price;
+        }
 
         // Onko tarpeellisia Dish-luokassa?
         //public DishCategory dishCategory { get; set; }
@@ -32,6 +44,38 @@ namespace MenuLibrary
                 if (value != "")
                 {
                     dishName = value;
+                }
+            }
+        }
+
+        public string DishDescription
+        {
+            get
+            {
+                return dishDescription;
+            }
+
+            set
+            {
+                if (value != "")
+                {
+                    dishDescription = value;
+                }
+            }
+        }
+
+        public double Price
+        {
+            get
+            {
+                return price;
+            }
+
+            set
+            {
+                if (value > 0)
+                {
+                    price = value;
                 }
             }
         }

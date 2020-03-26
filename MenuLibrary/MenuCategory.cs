@@ -10,6 +10,6 @@ namespace MenuLibrary
 
         public string description { get; set; }
 
-        public List<Dish> dishes { get; set; } = new List<Dish>();
+        public List<Dish> dishes /*{ get; set; }*/ = new List<Dish>();
     }
 }
