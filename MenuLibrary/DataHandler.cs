@@ -16,7 +16,7 @@ namespace MenuLibrary
         public Dish insertDish()
         {
             Console.WriteLine("\nSyötä annoksen nimi:");
-
+            
             string aterianNimi = Console.ReadLine();
 
             Console.WriteLine("\nSyötä annoksen kuvaus:");
@@ -28,6 +28,8 @@ namespace MenuLibrary
             double aterianHinta = double.Parse(Console.ReadLine());
 
             Dish ateria = new Dish(aterianNimi, aterianKuvaus, aterianHinta);
+
+            //i++;
 
             //Console.WriteLine("\n*****");
             //Console.WriteLine($"\nSyötit seuraavan annoksen\n");
@@ -56,8 +58,6 @@ namespace MenuLibrary
                 Console.WriteLine("Ei annoksia listalla");
             }
 
-            //int i = 1;
-
             foreach (Dish dish in this.dishes)
             {
                 Console.WriteLine($"{dish.DishName} | {dish.DishDescription} | {dish.Price}");
@@ -66,6 +66,14 @@ namespace MenuLibrary
 
         public MenuCategory insertMenuCategory()
         {
+            Console.WriteLine("\nSyötä menun nimi");
+
+            string menunNimi = Console.ReadLine();
+
+            string menunKuvaus = Console.ReadLine();
+
+            //List<Dish> valittuAnnos = Console.ReadLine();
+            
             return null;
         }
     }

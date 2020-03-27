@@ -6,11 +6,10 @@ namespace MenuLibrary
 {
     public class Dish
     {
-        //public int menuID { get; set; }
-
         private string dishName;
         private string dishDescription;
         private double price;
+
         public DishMainCharacter DishMainCharacter { get; set; }
         public FoodLimitation foodLimitation { get; set; }
 
